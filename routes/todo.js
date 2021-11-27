@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
     ]);
     res.json(todo.rows[0]);
   } catch (err) {
-    console.error(err.message);
+    console.error(err);
   }
 });
 
